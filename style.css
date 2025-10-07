@@ -1,0 +1,123 @@
+/* Navbar */
+.nav {
+    list-style-type: none;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.nav li {
+    float: left;
+}
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+ul.nav a:hover {
+    background-color: gray;
+    color: lightblue;
+}
+
+/* Grid setup */
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: 10px;
+}
+.grid-item {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar and image spans */
+.nav-menu {
+    grid-column: 1 / span 3;
+}
+
+/* Main image */
+.main-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main content */
+.main1 {
+    grid-column: 1 / span 2;
+}
+.main2 {
+    grid-column: 1 / span 2;
+}
+.sidecontent {
+    grid-row: 3 / span 3;
+    grid-column: 3;
+    background-color: darkred;
+    color: white;
+}
+
+/* Support sections */
+.support1 {
+    grid-row: 4;
+    grid-column: 1;
+    background-color: red;
+    color: white;
+}
+.support2 {
+    grid-row: 4;
+    grid-column: 2;
+    background-color: red;
+    color: white;
+}
+
+/* Second page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    color: #222;
+}
+
+.second-page .grid-item {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 20px 30px;
+}
+
+.second-page .title {
+    background-color: #e0e0e0;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    grid-column: 1 / span 3;
+}
+
+.second-page .sidecontent {
+    background-color: #f4f4f4;
+    border: none;
+    color: #000;
+}
+
+.second-page .main-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
